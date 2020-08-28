@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -6,16 +6,128 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Html测试</title>
+        <link rel="stylesheet" href="index.css" rel="stylesheet" type="text/css">
+        <style>
+            span{
+                font-size: 18px;
+                color: red;
+                font-weight: bold;
+            }
+            .img{
+                text-align: center;
+            }
+        </style>
+        <!-- <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href=""> -->
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <script src="" async defer></script>
+        <p>这是随意的一行~</p>
+        <section>中间部分</section>
+        <aside>侧边栏</aside>
+        <ul>
+            <li>风惊海</li>
+            <li>shylock-kai</li>
+        </ul>
+        <ol>
+            <li>风净海</li>
+            <li>lenovo_kai</li>
+        </ol>
+        <div class="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1598515848808&di=68c0653a779a86264843ab0598f0bfb6&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F8dafa563505fd7c4f0ce24f2ecd827765d4c7c089447-nb3rm7_fw658" alt="图像丢失~~" title="国家电网" >
+        </div>
+        <span>
+            <a href="http://www.baidu.com" title="点击进入百度">点击</a>
+            <a href="http://www.sgcc.com.cn/" target="_blank">电网</a>
+            <a href="http://www.sgcc.com.cn/" target="_self">电网</a>
+        </span>
+        <table border="1">
+            <caption>学习路线及计划</caption>
+            <hr/>
+            <thead>
+                <tr>
+                    <th>技术名称</th>
+                    <th>计划学习时长</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>html</td>
+                    <td>1天</td>
+                </tr>
+                <tr>
+                    <td>css</td>
+                    <td>1天</td>
+                </tr>
+                <tr>
+                    <td>jsp</td>
+                    <td>1天</td>
+                </tr>
+                <tr>
+                    <td>spring</td>
+                    <td>3天</td>
+                </tr>
+                <tr>
+                    <td>ssm</td>
+                    <td>3天</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>总天数</td>
+                    <td>9天</td>
+                </tr>
+            </tfoot>
+        </table>
+        <form method="post" action="user.text">
+            身份证号：
+            <input type="number" name="userid" value="" placeholder="身份证号码"/>
+            <br>
+            姓名：
+            <input type="text" name="username" value="" placeholder="用户名"/>
+            <br>
+            密码：
+            <input type="password" name="password" value="" placeholder="密码"/>
+            <br>
+            <label >性别</label>
+            &nbsp
+            <label for="man">男</label>
+            <input type="radio" value="" name="sex" id="man" checked="checked"/>
+            <label for="woman">女</label>
+            <input type="radio" value="" name="sex" id="woman"/>
+            <br>
+            擅长技能：
+            <label for="java">java</label>
+            <input type="checkbox" value="" name="skill" id="java"/>
+            <label for="Android">Android</label>
+            <input type="checkbox" value="" name="skill" id="Android"/>
+            <label for="cloud">云计算</label>
+            <input type="checkbox" value="" name="skill" id="cloud"/>
+            <br>
+            个人网站：
+            <input type="url" name="selfweb" value="" placeholder="以http或https开头"/>
+            <br>
+            个人邮箱：
+            <input type="email" name="email" value="" placeholder="注意邮箱格式@"/>
+            <br>
+            <label for="selfinfo">个人简介</label>
+            <textarea cols="50" rows="3" placeholder="特长及爱好" id="selfinfo"></textarea>
+            <br>
+            <label for="work_position">职位：</label>
+            <select name="position" id="work_position">
+                <option value="primaryelementary">初级研发工程师</option>
+                <option value="middle">中级研发工程师</option>
+                <option value="advance">高级研发工程师</option>
+            </select>
+            <br>
+            <input type="submit" value="提交" name="submit">
+            <input type="reset" value="重置" name="reset">
+        </form>
+        <hr/>
+        <footer>风惊海</footer>
+        <!--<script src="" async defer></script>-->
     </body>
 </html>
